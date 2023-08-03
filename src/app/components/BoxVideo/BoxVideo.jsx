@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import styles from "./BoxVideo.module.css";
 
 import youtubeImage from "../../../../public/youtubeImage.svg";
+import copyIcon from "../../../../public/copyIcon.svg";
 
 export default function BoxVideo() {
   return (
@@ -54,6 +56,9 @@ export default function BoxVideo() {
             <span>It`s what you`re experiencing here, right now</span>
           </li>
         </ul>
+        <button className={styles.copyButton}>
+          <Image src={copyIcon} alt="" width={20} height={20} />
+        </button>
       </div>
     </main>
   );
